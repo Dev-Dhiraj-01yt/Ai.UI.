@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(187, 187, 185, 0.116);
+}
+
+.profile {
+    position: relative;
+    height: clamp(300px, 600px, 900px);
+    width: clamp(250px, 380px, 480px);
+    border: 1px solid white;
+    box-shadow: 1.5px 5px 8px lightgray, -2px 5px 8px lightgray,1px -5px 8px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5em;
+}
+
+.blur {
+    position: absolute;
+    height: 55%;
+    width: 99%;
+    bottom: 0%;
+    border: 1px solid rgba(199, 195, 195, 0.13);
+    border-radius: 1.5em;
+    /* backdrop-filter: blur(2px); */
+    filter: blur(20px);
+    background: #ffffff;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 17%, rgba(255, 255, 255, 0.35) 35%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.658) 60%, rgba(255, 255, 255, 0.801) 70%, rgba(255, 255, 255, 0.945) 85%, rgba(255, 255, 255, 1) 100%);
+    overflow: hidden;
+    z-index: 3;
+}
+
+.image {
+    position: absolute;
+    height: 97%;
+    width: 95%;
+    border-radius: 1.5em;
+    overflow: hidden;
+    z-index: 1;
+    filter: blur(.1px);
+}
+ .glass{
+    position: absolute;
+    height: 96.5%;
+    width: 94.5%;
+    filter: blur(8px);
+    background-color: #ffffff00;
+    box-shadow: inset 5px 5px 10px #ffffff15, inset 5px -5px 10px #ffffff54;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 1.5em;
+    overflow: hidden;
+    z-index: 2;
+}
+.image img {
+    border-radius: 1.5em;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.info{
+    position: absolute;
+    height:40%;
+    width: 95%;
+    padding:max(2%,30px);
+    padding-top: 10px;
+    bottom: 1.5%;
+    border: 1px solid rgba(199, 195, 195, 0.13);
+    border-radius: 1.5em;
+    backdrop-filter: blur(2px); 
+    background: #ffffff11;
+    overflow: hidden;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.greet{
+    letter-spacing: 1.4px;
+    font-size: 25px;
+    font-weight: 400;
+    text-shadow: 1px 0px 5px rgba(0, 0, 0, 0.26);
+}
+#user{
+    font-size: 30px;
+    font-weight: 400;
+    text-shadow: 1px 0px 5px rgba(0, 0, 0, 0.26);
+}
+#work{
+    font-size: 20px;
+    font-weight: 390;
+}
