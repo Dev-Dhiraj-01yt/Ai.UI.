@@ -10,7 +10,7 @@ function using() {
     if (workload = "student") {
         work.innerText = forStudents;
         console.log(intro)
-    } else () {
+    } else {
         work.innerText = intro;
     };
     user.innerText = username;
@@ -20,6 +20,7 @@ using();
 
 const image = document.getElementsByClassName("img")[0];
 console.log(image);
+
 
 
 
