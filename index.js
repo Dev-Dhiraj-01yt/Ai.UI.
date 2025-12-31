@@ -7,7 +7,13 @@ function using() {
     const workload = prompt("what do you do");
     const forStudents = "how can I help you as a tutor";
     const intro = "I am a ai image tutor ui";
-    if (workload = "student") {
+    let nameArray = ["student","Student","STUDENT"];
+    function ChalBeta () {
+        if (nameArray) {
+            let logic = 1;
+        }else if ()
+    }
+    if (logic == 1) {
         work.innerText = forStudents;
         console.log(intro);
     }else {
@@ -20,6 +26,7 @@ using();
 
 const image = document.getElementsByClassName("img")[0];
 console.log(image);
+
 
 
 
