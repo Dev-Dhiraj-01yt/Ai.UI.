@@ -9,8 +9,8 @@ function using() {
     const intro = "I am a ai image tutor ui";
     if (workload = "student") {
         work.innerText = forStudents;
-        console.log(intro)
-    } else {
+        console.log(intro);
+    }else {
         work.innerText = intro;
     };
     user.innerText = username;
@@ -20,6 +20,7 @@ using();
 
 const image = document.getElementsByClassName("img")[0];
 console.log(image);
+
 
 
 
