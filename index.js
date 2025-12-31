@@ -1,4 +1,4 @@
- 
+
 const user = document.getElementById("user");
 const work = document.getElementById("work");
 //some function
@@ -20,6 +20,7 @@ using();
 
 const image = document.getElementsByClassName("img")[0];
 console.log(image);
+
 
 
 
