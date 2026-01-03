@@ -8,10 +8,18 @@ function using() {
     const forStudents = "how can I help you as a tutor";
     const intro = "I am a ai image tutor ui";
     let nameArray = ["student","Student","STUDENT"];
+    let logic;
     function ChalBeta () {
-        if (nameArray) {
-            let logic = 1;
-        }else if ()
+        if (workload == nameArray[0]) {
+            logic = 1;
+        }else if (workload == nameArray[1]) {
+            logic = 1;
+            
+        }else if (workload == nameArray[2]) {
+            logic = 1;
+        }else {
+            logic = 0;
+        };
     }
     if (logic == 1) {
         work.innerText = forStudents;
@@ -26,6 +34,7 @@ using();
 
 const image = document.getElementsByClassName("img")[0];
 console.log(image);
+
 
 
 
