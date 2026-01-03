@@ -30,10 +30,11 @@ function using() {
     user.innerText = username;
 };
 
-using();
+ChalBeta();
 
 const image = document.getElementsByClassName("img")[0];
 console.log(image);
+
 
 
 
