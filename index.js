@@ -5,9 +5,12 @@ const work = document.getElementById("work");
 function using() {
     const username = prompt("what is your goood name");
     const workload = prompt("what do you do");
+};
+
     const forStudents = "how can I help you as a tutor";
     const intro = "I am a ai image tutor ui";
     let nameArray = ["student","Student","STUDENT"];
+
     let logic;
     function ChalBeta () {
         if (workload == nameArray[0]) {
@@ -28,12 +31,14 @@ function using() {
         work.innerText = intro;
     };
     user.innerText = username;
-};
 
+// tunction call
+using()
 ChalBeta();
 
 const image = document.getElementsByClassName("img")[0];
 console.log(image);
+
 
 
 
